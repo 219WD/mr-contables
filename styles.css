@@ -39,7 +39,6 @@ body {
     align-items: center;
     width: 20vw;
     margin: auto;
-    /* margin-left: 5rem; */
 }
 
 .text-container{
@@ -402,9 +401,22 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
     .header-content img {
-        width: 40vw;
+        width: 50vw;
         margin: auto;
+    }
+    .text-container{
+        margin: auto;
+        width: 100%;
     }
     .header h1 {
         font-size: 40px;
@@ -447,6 +459,9 @@ body {
     .cta-content h3 {
         font-size: 20px;
     }
+    .cta-content img {
+        width: 50vw;
+    }
 
     .promotion-content {
         flex-direction: column;
@@ -468,5 +483,8 @@ body {
     .promotion-service p,
     .promotion-service li {
         font-size: 1.2rem;
+    }
+    .footer .container img{
+        width: 30vw;
     }
 }
